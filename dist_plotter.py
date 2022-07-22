@@ -3,7 +3,7 @@ import matplotlib.pylab as plt
 import sys
 
 number_of_digits_to_use = 2
-filepath = "x_workload.txt"
+filepath = "workload.txt"
 
 def read_from_disk(filepath):
     results = list()
@@ -50,3 +50,4 @@ for j in counted:
 
 plt.bar(names, values)
 plt.show()
+plt.savefig('dist.jpg')
